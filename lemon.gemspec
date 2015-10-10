@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["loocash"]
   spec.email         = ["lukaszkapica@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A Ruby language binding for LEMON C++ library.}
+  spec.description   = %q{A Ruby language binding for LEMON C++ library. LEMON stands for Library for Efficient Modeling and Optimization in Networks. It is a C++ template library providing efficient implementations of common data structures and algorithms with focus on combinatorial optimization tasks connected mainly with graphs and networks.}
+  spec.homepage      = "https://github.com/loocash/lemon"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
