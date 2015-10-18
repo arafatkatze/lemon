@@ -52,9 +52,9 @@ static VALUE graphCountNodes(VALUE self, VALUE graph) {
 	tListGraph* lg;
 	Data_Get_Struct(graph, tListGraph, lg);
 
-	size_t nodes = tListGraph_countNodes(lg);
+	int nodes = tListGraph_countNodes(lg);
 	VALUE result;
-	result = SIZET2NUM(nodes);
+	result = INT2NUM(nodes);
 
 	return result;
 }

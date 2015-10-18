@@ -16,9 +16,7 @@ tListGraphNode* tListGraph_addNode(tListGraph*);
 
 void tListGraph_clear(tListGraph*);
 
-typedef unsigned long int size_t;
-
-size_t tListGraph_countNodes(tListGraph*);
+int tListGraph_countNodes(tListGraph*);
 
 #ifdef __cplusplus
 }; /* extern "C" */
