@@ -28,6 +28,10 @@ tListGraphNode* tListGraph_addNode(tListGraph* graph) {
 	return node;
 }
 
+void tListGraph_clear(tListGraph* lg) {
+	lg->lg.clear();
+}
+
 size_t tListGraph_countNodes(tListGraph* graph) {
 	size_t nodes = countNodes(graph->lg);
 	return nodes;

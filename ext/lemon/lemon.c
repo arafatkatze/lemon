@@ -41,6 +41,13 @@ static VALUE lg_addNode(VALUE self) {
 	return self;
 }
 
+static VALUE lg_clear(VALUE self) {
+	tListGraph* lg;
+	Data_Get_Struct(self, tListGraph, lg);
+	tListGraph_clear(lg);
+	return self;
+}
+
 static VALUE graphCountNodes(VALUE self, VALUE graph) {
 	tListGraph* lg;
 	Data_Get_Struct(graph, tListGraph, lg);
@@ -63,6 +70,7 @@ void Init_lemon()
 
 	rb_define_method(cListGraph, "initialize", lg_initialize, 0);
 	rb_define_method(cListGraph, "addNode", lg_addNode, 0);
+	rb_define_method(cListGraph, "clear", lg_clear, 0);
 
 	rb_define_module_function(mLemon, "countNodes", graphCountNodes, 1);
 }
